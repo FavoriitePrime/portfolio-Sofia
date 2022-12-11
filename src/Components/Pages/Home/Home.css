@@ -1,0 +1,118 @@
+.Home {
+    width: 100vw;
+    height: 90vh;
+    padding-top: 65px;
+}
+
+.image {
+    position: absolute;
+    mask-image: url(../../../Images/Girl.svg);
+    mask-repeat: no-repeat;
+    mask-position: right;
+    mask-size: contain;
+    height: 95%;
+    width: 100%;
+    animation: rainbow 5s ease infinite;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+
+.containerVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 50%;
+    height: 100%;
+    width: 50%;
+}
+
+.containerLB {
+    background-image: url(/src/Images/Sofia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 5%;
+    height: 45%;
+    width: 45%;
+    align-self: flex-end;
+    border: solid;
+    border-width: 2px 3px 2px 0px;
+    border-color: rgba(0, 0, 0, 0.7);
+    background-color: #06332E;
+    border-radius: 160.5px 160.5px 160.5px 0px;
+}
+
+.containerRT {
+    align-self: flex-start;
+    margin-left: 5%;
+    text-align: left;
+    height: 40%;
+    padding-left: 30%;
+    padding-right: 5%;
+    font-size: 28px;
+    line-height: 50px;
+    color: white;
+    width: 70%;
+    border: solid;
+    border-width: 2px 3px 2px 0px;
+    border-color: rgba(0, 0, 0, 0.7);
+    background-color: #06332E;
+    border-radius: 160.5px 0 160.5px 160.5px;
+}
+
+
+@keyframes rainbow {
+    0% {
+        background-color: #0C8346;
+    }
+
+    50% {
+        background-color: rgba(143, 213, 166, 0.25);
+    }
+
+    100% {
+        background-color: #0C8346;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .image{
+        display: none;
+    }
+    .containerVertical{
+        flex-direction: column;
+        width: 100%;
+        height: 125vh;
+    }
+    .containerLB{
+        margin: auto;
+        width: 50%;
+        height: 100%;
+    }
+    .containerRT{
+        margin: auto;
+        width: 85%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image{
+        display: none;
+    }
+    .containerVertical{
+        flex-direction: column;
+        width: 90%;
+    }
+    .containerLB{
+        width: 75%;
+    }
+    
+}

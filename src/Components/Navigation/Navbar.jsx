@@ -6,27 +6,21 @@ import './Navbar.css'
 
 export default function Navbar() {
     const [menuActive, setMenuActive] = useState(false)
+
     return (
         <>
             <div className="navigation">
-                <button className="burger-btn"
+                <button class={menuActive ? 'burger-btn active' : 'burger-btn'}
                     onClick={() => setMenuActive(!menuActive)}>
-                    <div class={menuActive ? 'icon-two active-two' : 'icon-two'}>
-                        <div class="hamburger hamburger-two"></div>
-                    </div>
+                    <span ></span>
                 </button>
-                <div className="pageTag">
-                    <div className="Text">
-                        Текщая страница
-                    </div>
-                </div>
             </div>
             <div className={menuActive ? 'menu active' : 'menu'}>
                 <ul className="list">
-                    <Link><li className="element">Главная</li></Link>
-                    <Link><li className="element">Главная</li></Link>
-                    <Link><li className="element">Главная</li></Link>
-                    <Link><li className="element">Главная</li></Link>
+                    <Link onClick={() => setMenuActive(!menuActive)} to={"/"}><li className="element">Главная</li></Link>
+                    <Link onClick={() => setMenuActive(!menuActive)} to={"/Education"}><li className="element">Моё образование</li></Link>
+                    <Link onClick={() => setMenuActive(!menuActive)} to={"/AboutMe"}><li className="element">Мои проекты</li></Link>
+                    <Link onClick={() => setMenuActive(!menuActive)} to={"/Contacts"}><li className="element">Контакты</li></Link>
                 </ul>
             </div>
         </>

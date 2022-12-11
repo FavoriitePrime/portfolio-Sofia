@@ -1,0 +1,65 @@
+.AboutMe{
+    width: 100vw;
+    height: 90vh;
+    padding-top: 50px;
+}
+.containerH{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+
+}
+.flower {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.content{
+    text-align: left;
+    height: 100%;
+    width: 35%; 
+    font-size: 28px;
+    line-height: 50px;
+    color: white;
+    border: solid;
+    border-width: 2px 3px 2px 0px;
+    border-color: rgba(0, 0, 0, 0.7);
+    background-color: #06332E;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 160.5px 160.5px 0    ;
+    transition: all 0.5s;
+}
+
+.content:hover{
+    width: 50%;
+}
+
+.content.one{
+    background-image: url(../../../Images/Car.jpg);
+    border-radius: 160.5px 0 0 160.5px;
+}
+
+@media screen and (max-width: 900px) {
+   .item{
+     width: 50%;
+   }
+   .item:hover{
+    width: 100%;
+}
+   .AboutMe{
+    padding-top: 400px;
+   }
+}

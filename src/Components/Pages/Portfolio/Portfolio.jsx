@@ -1,8 +1,8 @@
 import React from 'react'
-import './AboutMe.css'
+import './Portfolio.css'
 
 
-const AboutMe = function () {
+const Portfolio = function () {
     return (
         <>
             <div className='AboutMe'>
@@ -23,4 +23,4 @@ const AboutMe = function () {
     )
 }
 
-export { AboutMe }
+export { Portfolio }

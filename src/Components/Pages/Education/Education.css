@@ -29,6 +29,7 @@
     text-align: left;
     height: 100%;
     width: 35%; 
+    padding-left: 10px;
     font-size: 28px;
     line-height: 50px;
     color: white;
@@ -42,14 +43,20 @@
     border-radius: 0 160.5px 160.5px 0    ;
     transition: all 0.5s;
 }
+.content::before{
+    content: '\00a0\00a0';
+}
 
 .content:hover{
-    width: 50%;
+    width: 35%;
 }
 
 .content.one{
-    background-image: url(../../../Images/Car.jpg);
+    background-image: url(../../../Images/KMB.jpg);
     border-radius: 160.5px 0 0 160.5px;
+}
+.content.one:hover{
+    width: 50%;
 }
 
 @media screen and (max-width: 900px) {

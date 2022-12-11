@@ -47,16 +47,19 @@
 }
 
 .item.one{
-    background-image: url(../../../Images/Car.jpg);
+    background-image: url(../../../Images/portfolio.jpg);
     border-radius: 160.5px 160.5px 0 160.5px;
 }
 .item.two{
+    background-image: url(../../../Images/portfolio2.jpg);
     border-radius: 160.5px  160.5px 160.5px 0;
 }
 .item.three{
+    background-image: url(../../../Images/portfolio3.jpg);   
     border-radius: 160.5px 0 160.5px 160.5px;
 }
 .item.four{
+    background-image: url(../../../Images/portfolio4.jpg);
     border-radius: 0  160.5px 160.5px 160.5px ;
 }
 
